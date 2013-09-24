@@ -10,15 +10,18 @@ namespace OnlineAFIS.AFIS
     {
         private Afis _instance;
 
-        // Lock synchronization object
-        private static object syncLock = new object();
+        public int Dpi { get; set; }
+
+        public int MinMatches { get; set; }
+
+        public float Threshold { get; set; }
 
         // Constructor (protected)
         public Afis()
         {
             if (_instance == null)
             {
-                lock (syncLock)
+                lock (this)
                 {
                     if (_instance == null)
                     {
@@ -33,7 +36,7 @@ namespace OnlineAFIS.AFIS
         
         }
 
-        public List<Person> Identify(Person probe, List<Person> candidates)
+        public IEnumerable<Person> Identify(Person probe, IEnumerable<Person> candidates)
         {
             List<Person> ListPerson = new List<Person>();
 

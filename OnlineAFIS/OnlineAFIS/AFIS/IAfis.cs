@@ -9,7 +9,7 @@ namespace OnlineAFIS.AFIS
     interface IAfis
     {
         void Extract(Person person);
-        List<Person> Identify(Person probe, List<Person> candidates);
+        IEnumerable<Person> Identify(Person probe, IEnumerable<Person> candidates);
         float Verify(Person probe, Person candidate);
     }
 }

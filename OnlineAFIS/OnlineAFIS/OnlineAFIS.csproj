@@ -175,7 +175,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\FingerprintModel.cs" />
+    <Compile Include="Models\FingerprintRepository.cs" />
+    <Compile Include="Models\IRepository.cs" />
     <Compile Include="Models\PersonModel.cs" />
+    <Compile Include="Models\PersonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
