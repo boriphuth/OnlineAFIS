@@ -73,6 +73,7 @@ namespace Sample
             List<MyPerson> database = new List<MyPerson>();
             database.Add(Enroll(Path.Combine(ImagePath, "candidate1.tif"), "Fred Flintstone"));
             database.Add(Enroll(Path.Combine(ImagePath, "candidate2.tif"), "Wilma Flintstone"));
+
             database.Add(Enroll(Path.Combine(ImagePath, "candidate3.tif"), "Barney Rubble"));
 
             // Save the database to disk and load it back, just to try out the serialization

@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7EA221EB-8008-4566-BB1F-B8821625AF9F}</ProjectGuid>
+    <ProjectGuid>{E1352652-2149-400E-9D2A-37D0792B8602}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OnlineAFIS.Tests</RootNamespace>
@@ -128,7 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OnlineAFIS\OnlineAFIS.csproj">
-      <Project>{8E63C7EC-BED8-4FBA-9D57-F2BBE5C0D176}</Project>
+      <Project>{629C2566-982D-4DA2-858A-513BC91B7A75}</Project>
       <Name>OnlineAFIS</Name>
     </ProjectReference>
   </ItemGroup>
